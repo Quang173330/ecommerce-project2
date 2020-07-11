@@ -1,0 +1,28 @@
+.search-products-container {
+    & input {
+        outline: 0;
+        padding: 0 15px;
+        width: calc(100% - 50px);
+        font-size: 15px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        background: white;
+    }
+
+    & button {
+        cursor: pointer;
+        background: #34495e;
+        border-radius: 5px;
+        font-size: 20px;
+        color: white;
+        border: none;
+        height: 50px;
+        width: 50px;
+        transition: .3s;
+
+        &:hover {
+            background: #1f2c38;
+        }
+    }
+}

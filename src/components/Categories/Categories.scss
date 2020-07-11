@@ -1,0 +1,13 @@
+.contain{
+    display: flex;
+    & .category{
+        width: 25%;
+        background-color: crimson;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    & .product{
+        width: 75%;
+        background-color: cyan;
+    }
+}

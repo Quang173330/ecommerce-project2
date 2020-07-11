@@ -1,0 +1,32 @@
+.dashboard{
+    width: 230px;
+    background-color: white;
+    & .list-admin{
+        list-style: none;
+        margin-top: 150px;
+        & .list-item{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 230px;
+            & .a-item{
+                margin-left: 20px;
+                color: #F27812;
+                text-decoration: none;
+            }
+        }:hover{
+            background-color: #f1f1f1;
+        }
+        & .list-dashboard{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width:230px;
+            background-color: #F27812;
+            & .a-dashboard{
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+
+            }
+        }
+    }
+}

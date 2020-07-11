@@ -1,0 +1,85 @@
+.float-form-container {
+    position: fixed;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+
+    & .float-form {
+        background: white;
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+
+        & .title {
+            margin-bottom: 30px;
+        }
+
+        & input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        & textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            height: 150px;
+            padding: 15px;
+            font-size: 16px;
+            resize: none;
+            border: solid 1px rgba(0, 0, 0, .3);
+        }
+
+        & .save-button,
+        & .cancel-button {
+            cursor: pointer;
+            outline: 0;
+            background: transparent;
+            float: right;
+            padding: 20px;
+            width: 150px;
+            border: solid 1px rgba(0, 0, 0, .3);
+            font-weight: bold;
+            transition: .3s;
+
+            &:hover {
+                background: #f3f3f3;
+            }
+        }
+
+        & .cancel-button {
+            margin-right: 10px;
+        }
+
+        @media screen and (max-width: 360px) {
+            & button {
+                width: 100px;
+            }
+        }
+    }
+
+    &.active {
+        display: flex;
+
+        & .float-form {
+            animation: formDown .5s forwards;
+        }
+    }
+}
+
+@keyframes formDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

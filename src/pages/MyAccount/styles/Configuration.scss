@@ -1,0 +1,37 @@
+@import "../../../styles/FloatForm.scss";
+
+.configuration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #C33764;
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    background: linear-gradient(to right, #1D2671, #C33764);
+    min-height: calc(100vh - 76px);
+
+    & div {
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background: white;
+
+        & h2 {
+            display: inline;
+            word-break: break-all;
+        }
+
+        & .edit-button {
+            cursor: pointer;
+            position: relative;
+            top: 5px;
+            outline: 0;
+            background: transparent;
+            border: none;
+            font-size: 20px;
+            float: right;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.order {
+    border: solid 1px rgba(0, 0, 0, .3);
+    padding: 20px 20px 0 20px;
+    margin-top: 30px;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 40px;
+    background:#fafafa ;
+
+    & .details {
+        margin-bottom: 20px;
+        & .name-button{
+            display: flex;
+            justify-content: space-between;
+            & .total {
+                font-weight: bold;
+                font-size: 20px;
+            }
+            & .button-state{
+                padding: 5px;
+                cursor: pointer;
+                background-color: #0c9463;
+                color: white;
+                min-width: 100px;
+                min-height: 30px;
+                border: none;
+                border-radius: 5px;
+
+            }
+            & .cancled{
+                background-color: red;
+
+            }
+        }
+
+
+        & .id {
+            color: #6e6e6e;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        & .date {
+            color: #bdbdbd;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        & .state{
+            color:  brown;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    & .view-products {
+        border-top: solid 1px rgba(0, 0, 0, .3);
+        padding: 20px 0;
+        text-align: center;
+
+        & a {
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            color: #00aeff;
+
+            & i {
+                position: relative;
+                top: -3px;
+
+                &.fa-sort-up {
+                    top: 3px;
+                }
+            }
+        }
+    }
+
+    & .order-products-container {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}

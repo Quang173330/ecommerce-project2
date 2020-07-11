@@ -1,0 +1,62 @@
+.alerts-container {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    max-width: 300px;
+    right: 30px;
+    bottom: 30px;
+
+    .alert {
+        padding: 20px;
+        margin-top: 20px;
+        width: 100%;
+        animation: .5s fadeInLeft forwards;
+    
+        & button {
+            cursor: pointer;
+            outline: 0;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: none;
+            border: none;
+            font-size: 18px;
+        }
+    
+        &.none {
+            display: none;
+        }
+    
+        &.success {
+            background: #9cff9c;
+        }
+    
+        &.error {
+            background: #ff9c9c;
+        }
+
+        &.fade {
+            animation: 1s fade forwards;
+        }
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

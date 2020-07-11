@@ -1,0 +1,112 @@
+.add-product-container {
+    display: flex;
+
+    & form {
+        text-align: center;
+        padding: 20px;
+        max-width: 600px;
+        width: 100%;
+        background: white;
+        margin:auto;
+
+        & h2 {
+            margin-bottom: 20px;
+        }
+
+        & input {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            height: 50px;
+            padding: 0 15px;
+            font-weight: bold;
+            border: solid 1px rgba(0, 0, 0, .3);
+        }
+        & .select-category{
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            height: 50px;
+            padding: 0 15px;
+            font-weight: bold;
+            border: solid 1px rgba(0, 0, 0, .3);
+
+        }
+
+        & .image-preview {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            margin-bottom: 20px;
+            border: solid 1px rgba(0, 0, 0, .3);
+            width: 100%;
+
+            & label {
+                cursor: pointer;
+                display: block;
+                padding: 20px;
+                color: #0062ff;
+                border: solid 1px #0062ff;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: .3s;
+
+                &:hover {
+                    box-shadow: 0 0 6px #0062ff;
+                    background: #f9fbff;
+                }
+            }
+
+            & .preview {
+                display: none;
+                width: 100%;
+                height: 100%;
+                background-size: cover !important;
+                background-position: center !important;
+            }
+
+            & input {
+                display: none;
+            }
+
+            &.active {
+                & .preview {
+                    display: block;
+                }
+
+                & label {
+                    display: none;
+                }
+            }
+        }
+
+        & textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            height: 150px;
+            padding: 15px;
+            font-size: 16px;
+            resize: none;
+            border: solid 1px rgba(0, 0, 0, .3);
+        }
+
+        & button {
+            cursor: pointer;
+            border: none;
+            background: #0062ff;
+            color: white;
+            border-radius: 5px;
+            padding: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: .3s;
+
+            &:hover {
+                background: #3f89ff;
+            }
+        }
+    }
+}

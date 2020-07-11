@@ -1,0 +1,20 @@
+body{
+    background-color: #f1f1f1;
+}
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    width: 80%;
+    margin: 40px auto;
+    grid-gap: 15px;
+    
+
+}
+
+.products-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
