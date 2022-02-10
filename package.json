@@ -21,7 +21,7 @@
     "express-fileupload": "^1.1.7-alpha.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.18",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.18.9",
     "paypal-rest-sdk": "^1.8.1",
     "react": "^16.7.0",
